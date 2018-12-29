@@ -19,10 +19,10 @@ Wireshark version: Wireshark 2.4.2 (v2.4.2-0-gb6c63ae)
 
 put `extract.py` in the same directory with your pcapfile
 
-`logfile`: path of log file
-`dnsile`: my `F` key doesn't work well so... this file is a output file, which contains some of dns records appeared in pcap file.
-`savefile`: another output file, which outputs hosts appeared in pcap file, except internal net address.
-`pcapfile`: that pcap file going to be processed.
+`logfile`: path of log file  
+`dnsile`: my `F` key doesn't work well so... this file is a output file, which contains some of dns records appeared in pcap file.  
+`savefile`: another output file, which outputs hosts appeared in pcap file, except internal net address.  
+`pcapfile`: that pcap file going to be processed.  
 
 **used commands:**  
 
