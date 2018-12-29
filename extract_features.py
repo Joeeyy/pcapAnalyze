@@ -62,8 +62,9 @@ def main():
 			node1_ip = node1[0]
 			node1_port = node1[1]
 			bytes16 = b[6].split( )[1:17]
-			line = node0_ip+","+node0_port+","+node1_ip+","+node1_port+","+protocol+","+"%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d"%(hex2int(bytes16[0]),hex2int(bytes16[1]),hex2int(bytes16[2]),hex2int(bytes16[3]),hex2int(bytes16[4]),hex2int(bytes16[5]),hex2int(bytes16[6]),hex2int(bytes16[7]),hex2int(bytes16[8]),hex2int(bytes16[9]),hex2int(bytes16[10]),hex2int(bytes16[11]),hex2int(bytes16[12]),hex2int(bytes16[13]),hex2int(bytes16[14]),hex2int(bytes16[15]))+","+app+"\n"
-			print(line)
+			if len(bytes16) == 16:
+				line = node0_ip+","+node0_port+","+node1_ip+","+node1_port+","+protocol+","+"%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d"%(hex2int(bytes16[0]),hex2int(bytes16[1]),hex2int(bytes16[2]),hex2int(bytes16[3]),hex2int(bytes16[4]),hex2int(bytes16[5]),hex2int(bytes16[6]),hex2int(bytes16[7]),hex2int(bytes16[8]),hex2int(bytes16[9]),hex2int(bytes16[10]),hex2int(bytes16[11]),hex2int(bytes16[12]),hex2int(bytes16[13]),hex2int(bytes16[14]),hex2int(bytes16[15]))+","+app+"\n"
+				print(line)
 
 
 
