@@ -3,7 +3,7 @@ python scripts to analyze pcap files with the support of command tools of Wiresh
 
 This repo collects python scripts to process pcap files for iTrafficMonitor system.
 
-**Materials: **  
+**Materials:**  
 
 1. a pcap file  
 2. log file of that pcap file, which contains packet logs for some packets in pcap file, like `{  "length" : 976,  "protocol" : "TCP",  "time" : "2018-12-27 23:48:45.861",  "dstIP" : "msga.cupid.iqiyi.com",  "dstPort" : "80",  "srcPort" : "0",  "srcIP" : "36.*.*.*"}`
@@ -51,6 +51,6 @@ put `extract_features.py` in `extracted_flows_dir` of second step.
 **used commands:**  
 
 `tshark -r pcapfile -q -z conv,tcp|wc -l`: use this to count the number of tcp flows in pcapfile(need to be minused by 6)  
-`tshark -r %s -q -z follow,tcp,hex,%d"%(pcap,i)`: use this to get detailed information of a tcp stream.
-o
-ou
+`tshark -r %s -q -z follow,tcp,hex,%d"%(pcap,i)`: use this to get detailed information of a tcp stream. 
+ 
+
