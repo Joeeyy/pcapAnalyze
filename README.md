@@ -53,4 +53,7 @@ put `extract_features.py` in `extracted_flows_dir` of second step.
 `tshark -r pcapfile -q -z conv,tcp|wc -l`: use this to count the number of tcp flows in pcapfile(need to be minused by 6)  
 `tshark -r %s -q -z follow,tcp,hex,%d"%(pcap,i)`: use this to get detailed information of a tcp stream. 
  
+ ## Reference
+
+1. [https://www.wireshark.org/docs/man-pages/tshark.html](https://www.wireshark.org/docs/man-pages/tshark.html)
 
