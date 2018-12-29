@@ -8,9 +8,9 @@ This repo collects python scripts to process pcap files for iTrafficMonitor syst
 2. log file of that pcap file, which contains packet logs for some packets in pcap file, like `{  "length" : 976,  "protocol" : "TCP",  "time" : "2018-12-27 23:48:45.861",  "dstIP" : "msga.cupid.iqiyi.com",  "dstPort" : "80",  "srcPort" : "0",  "srcIP" : "36.*.*.*"}`
 
 ## environment
-OS version: macOS Mojave 10.14.2
-python version: Python 2.7.14
-Wireshark version: Wireshark 2.4.2 (v2.4.2-0-gb6c63ae)
+OS version: macOS Mojave 10.14.2  
+python version: Python 2.7.14  
+Wireshark version: Wireshark 2.4.2 (v2.4.2-0-gb6c63ae)  
 
 ## How to use
 
